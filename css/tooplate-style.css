@@ -804,12 +804,29 @@ strong {
   color: #96a2a7;
 }
 
-.loading {
+.progress {
+  height: 5px;
+  width: 0%;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  height: 6px;
-  background-color: #F9A826;
+  animation: progress 1s linear;
   z-index: 1000;
+}
+
+@keyframes progress {
+  to {
+    background-color: #F9A826;
+    width: 100%;
+  }
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
