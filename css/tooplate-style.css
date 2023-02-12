@@ -821,7 +821,7 @@ strong {
   }
 }
 
-:root * {
+:root progress {
   /* Pause the animation */
   animation-play-state: paused;
   /* Bind the animation to scroll */
