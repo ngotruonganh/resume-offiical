@@ -1,0 +1,59 @@
+.shake {
+    animation-name: shake;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake  {
+    0% {rotate: 0deg}
+    20% {rotate: 10deg}
+    40% {rotate: 0deg}
+    60% {rotate: -10deg}
+    80% {rotate: 0deg}
+    100% {rotate: 10deg}
+}
+
+.zoomIn {
+    animation-name: zoomIn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoomIn  {
+    0% {scale: 0.7}
+    20% {scale: 0.8}
+    20% {scale: 0.9}
+    20% {scale: 1}
+    20% {scale: 1.2}
+    100% {scale: 1.4}
+}
+
+.cut {
+    animation-name: cut;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cut {
+    0% {rotate: 1 1 1 60deg}
+    20% {rotate: 1 1 1 120deg}
+    20% {rotate: 1 1 1 180deg}
+    20% {rotate: 1 1 1 240deg}
+    20% {rotate: 1 1 1 300deg}
+    100% {rotate: 1 1 1 360deg}
+}
+
+.turn-around {
+    animation-name: turn-around;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes turn-around {
+    0% {rotate: y 0deg}
+    20% {rotate: y 90deg}
+    20% {rotate: y 180deg}
+    20% {rotate: y 270deg}
+    20% {rotate: y 300deg}
+    100% {rotate: y 0deg}
+}
